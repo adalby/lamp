@@ -18,8 +18,9 @@ sudo yum install httpd php php-mysql php-gd -y
 sudo systemctl enable httpd
 sudo systemctl start httpd
 
-# 2018 Oct 29 RAD Download latest copy of WordPress
-wget https://wordpress.org/latest.zip
+# 2018 Oct 29 RSD Download latest copy of WordPress (for Linux, unzip)
+wget https://wordpress.org/latest.tar.gz
+tar -xvzf latest.tar.gz
 
 # 2017 Aug 30 RAD Get certbot for https
 # Enable EPEL Optional Channels per https://certbot.eff.org/all-instructions/#centos-rhel-7-apache
